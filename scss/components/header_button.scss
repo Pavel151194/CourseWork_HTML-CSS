@@ -1,0 +1,32 @@
+header .wrapper .scroll {
+    font-family: $font;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    color: $white;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:after, &:before {
+        backface-visibility: hidden;
+        border: 1px solid rgba($white, 0);
+        content: " ";
+        display: block;
+        margin: $margc;
+        position: relative;
+        transition: all 200ms ease-in-out;
+        width: 0;
+    }
+    &:hover:after, &:hover:before {
+        backface-visibility: hidden;
+        border-color: $white;
+        transition: width 200ms ease-in-out;
+        width: 100%;
+    }
+    &:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid $border_white;
+    margin-bottom: 58px;
+    background-color: $white;
+    .wrapper {
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .burger_toggle, .burger_btn {
+        display: none;
+    }   
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}

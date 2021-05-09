@@ -1,0 +1,13 @@
+nav .wrapper .nav_link {
+    font-family: $font;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: $black;
+    cursor: pointer;
+    ;
+    &:hover {
+        color: $blue;
+    }
+}

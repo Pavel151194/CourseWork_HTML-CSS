@@ -1,0 +1,41 @@
+main .wrapper .story .text {
+    max-width: 400px;
+    .bold {
+    font-family:$font;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black;
+    margin-bottom: 30px;
+    }
+    span {
+        padding: 0 5px;
+        color: $blue;
+    }
+    .normal {
+        font-family:$font;
+        font-size: 13px;
+        line-height: 23px;
+        color: $black;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .wrapper .story .text {
+        max-width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        .bold {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main .wrapper .story .text {
+        .bold {
+            text-align: start;
+        }
+    }
+}

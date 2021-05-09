@@ -1,0 +1,35 @@
+footer .wrapper {
+    p {
+        font-family: $font;
+        font-size: 11px;
+        line-height: 19px;
+        color: $white;
+    }
+    .footer_nav {
+        font-family: $font;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 25px;
+        color: $white;
+        text-transform: uppercase;
+    }
+    .footer_contact {
+        font-family: $font;
+        font-size: 11px;
+        line-height: 16px;
+        color: $white;
+    }
+    i {
+        color: $white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer .wrapper {
+        i {
+            font-size: 20px;
+        }
+    }
+}

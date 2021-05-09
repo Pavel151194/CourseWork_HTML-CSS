@@ -1,0 +1,44 @@
+main .wrapper .story {
+    .card {
+    grid-row-start: 2;
+    font-family: $font;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+    text-transform: uppercase;
+    padding: 15px;
+    }
+    .left {
+        background: no-repeat url(../images/card_left.png);
+        background-position: 100%;
+    }
+    .center {
+        background: no-repeat url(../images/card_center.png);
+        background-position: 25%;
+    }
+    .right {
+        background: no-repeat url(../images/card_right.png);
+        background-position: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .wrapper .story .card {
+        min-height: 200px;
+        text-align: center;
+        grid-row-start: 4;
+    }
+}
+
+@media (max-width: 768px) {
+    main .wrapper .story .card {
+        grid-row-start: auto;
+        grid-column-start: 1;
+        background-size: cover;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
