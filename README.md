@@ -1,2 +1,2 @@
 # CourseWork
-Course Work HTML+CSS
+Course Work HTML+SCSS
